@@ -27,16 +27,52 @@ Successful creation of instance
 <img width="1910" height="468" alt="image" src="https://github.com/user-attachments/assets/03c72d99-b9d3-4832-86c3-e6df0699781c" />
 Successful installation of Apache <img width="1914" height="1084" alt="image" src="https://github.com/user-attachments/assets/e65d3ae9-4c45-406d-a800-f4029260e07b" />
 
-7. Access the server using its public IP in a browser (via HTTP).
+7. Access the server using its public IP in a browser (via HTTP). With given public IP address: http://47.128.64.33/
+<img width="989" height="1137" alt="image" src="https://github.com/user-attachments/assets/c7543e30-692b-438a-839c-c05fa0b66063" />
+
 9. Modify `/var/www/html/index.html` using nano and test the changes live.
 10. Download and copy files to `/var/www/html/` using `wget` and `sudo cp`.
 11. Create hyperlinks in `index.html` using anchor `<a>` tags.
 10.Test access using different devices and browsers.
 
-   
+## File Transfer & Permissions 
+- Use `wget` to download remote files to your VM. 
+- Use `sudo cp` to move them into the web directory. 
+- Use `scp -i key.pem localfile ubuntu@IP:/home/ubuntu/` to copy files from local to VM. 
+- Use `chmod` or change ownership if facing file access issues. 
+
+## Budget and Cost Monitoring in AWS 
+- Log into AWS Billing Dashboard via EC2 console. 
+- Set up a budget alert to avoid unexpected charges. 
+- Review instance charges and terminate unused resources. 
+- Avoid launching high-tier or GPU-backed instances.
+
+## Optional Challenges 
+
+**Challenge 1: Network Latency Testing**
+
+- Use `ping` to test servers in different countries. 
+- Compare latencies and discuss expected vs observed results. 
+- Discuss alternatives to EC2: Azure, DigitalOcean, Linode, etc. 
+
+**Challenge 2: Local File Upload via SCP**
+
+- Use `scp -i key.pem file ubuntu@IP:/home/ubuntu/` from your Linux machine. 
+- Move uploaded files into `/var/www/html/` using `sudo mv`. 
+
+**Challenge 3: Create a Custom HTML Page**
+
+- Write a simple HTML file (index.html) using tags like `<h1>`, `<p>`, and `<a>`. 
+- Upload it to the server and test in browser.
+
 ## Reflection Questions 
 - What were the benefits of cloud deployment over local virtualisation? 
 - How does Apache serve files, and how did you verify this? 
 - What did you learn about file ownership and permissions? 
 - What risks are associated with leaving instances running? 
 - How would you explain the difference between DNS and /etc/hosts to a client? 
+
+**Reflection file or markdown (reflection.md) answering:**
+- How does cloud hosting compare to local hosting?
+- What would you need to secure this server?
+- What alternatives to EC2 would you consider and why? 
