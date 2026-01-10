@@ -16,8 +16,12 @@ Develop working knowledge of the Ubuntu Linux environment via GUI and CLI. Learn
 ## GUI Familiarisation Proof 
 Screenshots of:  
 • Firefox opened and working  
+<img width="1278" height="906" alt="image" src="https://github.com/user-attachments/assets/6e82777b-f870-49de-8d22-f48958b222f3" />
+
 • LibreOffice with text typed  
-• File manager navigating directories  
+• File manager navigating directories
+<img width="1285" height="907" alt="image" src="https://github.com/user-attachments/assets/f15d6c27-9e26-48f9-a9f7-33160b98940e" />
+
 • Software installed via Ubuntu Software Centre 
 ## Terminal Commands Output 
 Evidence of CLI exploration, e.g., output screenshots or logs for:  
