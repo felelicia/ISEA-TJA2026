@@ -1,3 +1,4 @@
+🌐 Activity: AWS EC2 Apache Web Server Deployment 
 ## Lab objective
 To use a cloud-based server deployment using Amazon EC2. 
 We will be 
