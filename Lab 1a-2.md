@@ -23,6 +23,8 @@ Screenshots of:
 <img width="1285" height="907" alt="image" src="https://github.com/user-attachments/assets/f15d6c27-9e26-48f9-a9f7-33160b98940e" />
 
 • Software installed via Ubuntu Software Centre 
+<img width="1494" height="939" alt="image" src="https://github.com/user-attachments/assets/11b7f737-9d6f-46da-8d78-979c9df2b9f6" />
+
 ## Terminal Commands Output 
 Evidence of CLI exploration, e.g., output screenshots or logs for:  
 • ps -e, top, ls, ls -la, ls -alt  
