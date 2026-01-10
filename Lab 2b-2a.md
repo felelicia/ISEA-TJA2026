@@ -1,3 +1,5 @@
+## INTRODUCTION TO BASH SCRIPTING AND SYSTEM AUTOMATION
+
 ## Lab learning overview
 Basic Bash scripting and automating system tasks on Linux. 
 Activities include filesystem commands, creating scripts, using loops and conditionals, and automating system monitoring tasks.
