@@ -10,26 +10,27 @@ Gain exposure to the process of configuring network settings in a virtualised en
 ## Setup Instructions: 
 
 1. Installing VirtualBox, the VirtualBox application installed and visible in the Start Menu. 
-<img width="87" height="110" alt="image" src="https://github.com/user-attachments/assets/61f10b7d-e739-4e6f-918a-1baa88185935" />
-<img width="1100" height="525" alt="image" src="https://github.com/user-attachments/assets/0e60af6e-eac6-463f-a664-6e638daea279" />
+<img width="940" height="449" alt="image" src="https://github.com/user-attachments/assets/83b898b7-4ec8-419d-97de-661a0fcfffd3" />
+<img width="97" height="119" alt="image" src="https://github.com/user-attachments/assets/ed711344-5e8c-450d-b9ce-fa5eade0bea7" />
 
 2. Downloaded Ubuntu 25.10 LTS ISO image from the official Ubuntu website. Screenshot shows the downloaded file. 
-<img width="1794" height="1091" alt="image" src="https://github.com/user-attachments/assets/e0965196-fadc-4d49-8356-081c928df8d5" />
-<img width="856" height="30" alt="image" src="https://github.com/user-attachments/assets/482ccde3-1b3b-417b-826d-62387aa6d755" />
+<img width="1902" height="1079" alt="image" src="https://github.com/user-attachments/assets/db3aa427-eb7f-4d57-9e7e-bfd2e604b90a" />
+<img width="724" height="37" alt="image" src="https://github.com/user-attachments/assets/bcea0530-841e-43fe-9845-998d7950ba4b" />
 
 3. Created a new Virtual Machine in VirtualBox named 'vm1' with 2048 MB RAM and 20 GB disk. Screenshot would show VM settings (RAM, boot order, ISO mounted).
-<img width="940" height="687" alt="image" src="https://github.com/user-attachments/assets/2aa4de3b-6b75-45c6-8a7f-355196f20262" />
-<img width="940" height="687" alt="image" src="https://github.com/user-attachments/assets/a5500ff5-cf4b-4189-9e60-1e789cc81357" />
+<img width="940" height="653" alt="image" src="https://github.com/user-attachments/assets/43fe1a66-030b-4f79-a009-bfc694e6e05d" />
+<img width="940" height="430" alt="image" src="https://github.com/user-attachments/assets/6a4545ff-bdd0-47b2-b86c-f7ebb5faf56e" />
+<img width="940" height="687" alt="image" src="https://github.com/user-attachments/assets/0ae4f7cc-de9e-4b74-92a7-83998991a682" />
+<img width="940" height="687" alt="image" src="https://github.com/user-attachments/assets/6fa500b5-e27a-436f-a261-c7fb15d75aab" />
 
 4. Booted VM in VirtualBox using ISO and installed Ubuntu, with successful login screen of Ubuntu desktop.
-<img width="940" height="587" alt="image" src="https://github.com/user-attachments/assets/fec379ea-e09d-4f19-b7c3-874f0198ed5b" />
+<img width="940" height="678" alt="image" src="https://github.com/user-attachments/assets/c054296f-d4ad-4fe4-bbcb-d32b17da6b27" />
 
 5. Configuring network settings to allow NAT internet access, showing VirtualBox Network settings page with NAT selected. 
-<img width="968" height="1131" alt="image" src="https://github.com/user-attachments/assets/69363626-ef11-4839-9f01-4c90c6cec122" />
+open settings in VM insert screenshot here
 
 6. Verified Ubuntu running with GUI access. Screenshot would show Ubuntu desktop and with Terminal open.
-<img width="1281" height="907" alt="image" src="https://github.com/user-attachments/assets/f5d2233e-6232-4495-9748-0d93b7a63077" />
-<img width="1283" height="907" alt="image" src="https://github.com/user-attachments/assets/95c2c41e-4f2f-44f6-bd06-eb16fc084acc" />
+<img width="940" height="587" alt="image" src="https://github.com/user-attachments/assets/2e106d3e-9a6d-4942-99d0-785f19d8ed2d" />
 
 7. Installed Guest Additions inside Ubuntu. Evidence would include successful execution of `sudo apt install virtualbox-guest-utils virtualbox-guest-x11` and reboot.
 
@@ -63,8 +64,7 @@ A virtualised Linux environment is valuable in industry for software development
 If setting up another VM, better planning of resource allocation would be done to optimise performance. The network configuration would be chosen based on the intended use case from the start. Installing VirtualBox Guest Additions early would improve display resolution and system integration. Snapshots would also be taken before major changes to allow easy recovery.
 
 ## 📝 Optional Reflection/Report Prompts
-
-You may also be asked to include a short report or reflection answering: 
+A short report or reflection answering: 
 
 **1. What are the advantages of using virtual machines for testing and development?** 
 VirtualBox Ubuntu allows a safe and remote environment from the host operating system, in this case Windows.
@@ -73,8 +73,10 @@ Multiple operating systems with the virtual machines can run concurrently on the
 
 **2. What challenges did you face during installation or network setup?** 
 During the Ubuntu installation, some challenges include creating resources such as RAM and memory space, which can affect system performance if set too low.
-Network setup may also cause confusion, especially when deciding between NAT and Bridged mode.
-Ubuntu may not connect to the internet immediately due to incorrect adapter settings or disabled network drivers, requiring troubleshooting in VirtualBox’s network configuration. 
+<img width="940" height="651" alt="image" src="https://github.com/user-attachments/assets/d0b6f9f5-02df-458e-be26-48e6c3a4cfcd" />
+Ubuntu did not connect to the internet immediately at the start due to incorrect adapter settings or disabled network drivers, requiring troubleshooting in VirtualBox’s network configuration. 
+<img width="1280" height="921" alt="image" src="https://github.com/user-attachments/assets/e73d8456-e217-4ea5-95d7-c42285ebb55f" />
+
 
 **3. What are the differences between NAT and Bridged networking in VirtualBox?** 
 NAT (Network Address Translation) allows Ubuntu to access the internet through the host machine while remaining isolated from the local network.
@@ -84,7 +86,6 @@ Bridged Networking connects the Ubuntu virtual machine directly to the same netw
 The VM receives its own IP address and can communicate with other devices on the network, useful for bi-directional testing, such as hosting servers or testing network services, but it may expose the VM to network security risks.
 
 **4. What did you learn about Linux distributions (distros) from your reading?** 
-
 From reading about Linux distributions, it becomes clear that Ubuntu is one of many Linux distros, each designed for different purposes.
 Ubuntu is beginner-friendly, well-documented, and widely supported, making it a good choice for new Linux users.
-Other distros may focus on performance, security, or customization
+Other distros may focus on performance, security, or customisation.
