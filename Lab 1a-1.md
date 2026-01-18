@@ -33,59 +33,17 @@ Gain exposure to the process of configuring network settings in a virtualised en
 <img width="940" height="587" alt="image" src="https://github.com/user-attachments/assets/2e106d3e-9a6d-4942-99d0-785f19d8ed2d" />
 
 7. Installed Guest Additions inside Ubuntu. Evidence would include successful execution of `sudo apt install virtualbox-guest-utils virtualbox-guest-x11` and reboot.
+<img width="1270" height="785" alt="image" src="https://github.com/user-attachments/assets/98dc9080-e56c-4160-8d92-362b79d4314a" />
 
 8. Enabled SSH server (advanced option). Screenshot would show `sudo apt install openssh-server` and `systemctl status ssh` confirming active service. 
 Reboot and confirm successful setup
+<img width="1273" height="789" alt="image" src="https://github.com/user-attachments/assets/535f29e4-e189-4fd0-b4db-a3f6a7adc9f2" />
+<img width="768" height="179" alt="image" src="https://github.com/user-attachments/assets/5a2ff043-51b7-4880-bbed-187d28acc005" />
 
 ## Reflection Questions 
-
-**1. What challenges did you encounter during the virtual machine setup?** 
-
-One of the main challenges was correctly configuring the virtual machine’s resources, such as allocating enough RAM and storage without affecting the host system’s performance. Choosing the appropriate network mode (NAT or Bridged) also required careful consideration to ensure internet connectivity. Additionally, understanding VirtualBox settings like boot order and installing Ubuntu from an ISO file took some time for first-time setup.
-
-
-**2. What did you learn about virtualisation tools and their differences?** 
-
-This lab highlighted how virtualisation tools like VirtualBox act as hypervisors, allowing multiple operating systems to run on a single physical machine. Different tools may vary in performance, user interface, and feature sets, such as snapshot support, networking options, and hardware compatibility. VirtualBox stands out for being free, cross-platform, and beginner-friendly, making it suitable for educational use.
-
-
-**3. How confident do you feel using Ubuntu after completing this lab?** 
-
-After completing the lab, confidence in using Ubuntu increased significantly. Basic tasks such as navigating the desktop, using the terminal, managing files, and installing software using package managers became more familiar. The lab provided hands-on exposure to Linux fundamentals in a controlled environment, reducing hesitation when working with Ubuntu.
-
-
-**4. In what ways can a virtualised Linux environment help in industry scenarios?** 
-
-A virtualised Linux environment is valuable in industry for software development, testing, and cybersecurity training. It allows teams to safely test applications, simulate servers, and reproduce production environments without risking live systems. Virtual machines also support rapid deployment, system isolation, and cost efficiency, making them ideal for development, DevOps, and IT operations.
-
-
-**5. What would you do differently if setting up another VM?** 
-
-If setting up another VM, better planning of resource allocation would be done to optimise performance. The network configuration would be chosen based on the intended use case from the start. Installing VirtualBox Guest Additions early would improve display resolution and system integration. Snapshots would also be taken before major changes to allow easy recovery.
-
-## 📝 Optional Reflection/Report Prompts
-A short report or reflection answering: 
-
-**1. What are the advantages of using virtual machines for testing and development?** 
-VirtualBox Ubuntu allows a safe and remote environment from the host operating system, in this case Windows.
-With the virtual environment, we can experiment with Linux commands, install packages and configure services without risking the main system components.
-Multiple operating systems with the virtual machines can run concurrently on the same computer, which is useful for development and practice for IT users.
-
-**2. What challenges did you face during installation or network setup?** 
+**Challenges faced during installation or network setup:** 
 During the Ubuntu installation, some challenges include creating resources such as RAM and memory space, which can affect system performance if set too low.
 <img width="940" height="651" alt="image" src="https://github.com/user-attachments/assets/d0b6f9f5-02df-458e-be26-48e6c3a4cfcd" />
 Ubuntu did not connect to the internet immediately at the start due to incorrect adapter settings or disabled network drivers, requiring troubleshooting in VirtualBox’s network configuration. 
 <img width="1280" height="921" alt="image" src="https://github.com/user-attachments/assets/e73d8456-e217-4ea5-95d7-c42285ebb55f" />
 
-
-**3. What are the differences between NAT and Bridged networking in VirtualBox?** 
-NAT (Network Address Translation) allows Ubuntu to access the internet through the host machine while remaining isolated from the local network.
-It is simpler to configure and more secure, making it suitable for basic usage, updates, and learning Linux.
-
-Bridged Networking connects the Ubuntu virtual machine directly to the same network as the host.
-The VM receives its own IP address and can communicate with other devices on the network, useful for bi-directional testing, such as hosting servers or testing network services, but it may expose the VM to network security risks.
-
-**4. What did you learn about Linux distributions (distros) from your reading?** 
-From reading about Linux distributions, it becomes clear that Ubuntu is one of many Linux distros, each designed for different purposes.
-Ubuntu is beginner-friendly, well-documented, and widely supported, making it a good choice for new Linux users.
-Other distros may focus on performance, security, or customisation.
