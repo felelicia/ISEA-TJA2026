@@ -27,7 +27,7 @@ Gain exposure to the process of configuring network settings in a virtualised en
 <img width="940" height="678" alt="image" src="https://github.com/user-attachments/assets/c054296f-d4ad-4fe4-bbcb-d32b17da6b27" />
 
 5. Configuring network settings to allow NAT internet access, showing VirtualBox Network settings page with NAT selected. 
-open settings in VM insert screenshot here
+<img width="1284" height="767" alt="image" src="https://github.com/user-attachments/assets/815cd16e-5c87-46f7-8b13-0f8b71de8581" />
 
 6. Verified Ubuntu running with GUI access. Screenshot would show Ubuntu desktop and with Terminal open.
 <img width="940" height="587" alt="image" src="https://github.com/user-attachments/assets/2e106d3e-9a6d-4942-99d0-785f19d8ed2d" />
