@@ -19,6 +19,8 @@ Screenshots of:
 <img width="1278" height="906" alt="image" src="https://github.com/user-attachments/assets/6e82777b-f870-49de-8d22-f48958b222f3" />
 
 • LibreOffice with text typed  
+<img width="1291" height="906" alt="image" src="https://github.com/user-attachments/assets/d410d616-ea45-483a-97be-51b4323fa555" />
+
 • File manager navigating directories
 <img width="1285" height="907" alt="image" src="https://github.com/user-attachments/assets/f15d6c27-9e26-48f9-a9f7-33160b98940e" />
 
@@ -28,7 +30,19 @@ Screenshots of:
 ## Terminal Commands Output 
 Evidence of CLI exploration, e.g., output screenshots or logs for:  
 • ps -e, top, ls, ls -la, ls -alt  
+<img width="1203" height="757" alt="image" src="https://github.com/user-attachments/assets/0d08856f-42ff-4546-bd8f-a37fe46508aa" />
+<img width="1202" height="758" alt="image" src="https://github.com/user-attachments/assets/5e23a7d5-0662-407d-9168-04e48d1a1d90" />
+<img width="1205" height="757" alt="image" src="https://github.com/user-attachments/assets/f8ffb190-2077-4607-b79a-61e034cde811" />
+
 • File creation and editing with touch, nano, gedit, cat, less 
+touch
+<img width="1208" height="764" alt="image" src="https://github.com/user-attachments/assets/5e732081-e60a-42a7-8271-07cc0e449027" />
+<img width="435" height="92" alt="image" src="https://github.com/user-attachments/assets/95a228db-7385-41c5-8726-dcceb5334be8" />
+<img width="1205" height="763" alt="image" src="https://github.com/user-attachments/assets/2abf6e73-19e5-4eee-9f47-e9cda8dafd22" />
+<img width="903" height="214" alt="image" src="https://github.com/user-attachments/assets/d73fd0fb-b3c7-4379-a123-5e8a6ce9ed20" />
+cat
+less
+
 ## File Operations Practiced 
 Screenshot or terminal output showing use of:  
 • cp, mv, rm and file listing with size (ls -lah) 
