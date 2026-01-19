@@ -103,21 +103,6 @@ This happens because gedit is a graphical application requires GUI to display wi
 - Use scp to copy multiple files between systems; include scp command used and success message or transfer log.
 <img width="577" height="52" alt="image" src="https://github.com/user-attachments/assets/26a786b1-0211-4ecd-8a38-8cda37ad5944" />
 
-18. Extension Challenge 4 Completed (Bonus) 
-- Download top 10 books from Gutenberg, compress them with tar and bzip2, then transfer to partner via scp.
-
-19. Two VMs Networked (External/Online Students) 
-- Output of ip a showing both VM IPs, successful ping, and ssh between cloned machines.
-
-20. Reflection Paragraph (Optional)
-- A short reflection (100–200 words) on working with Linux networking, SSH, and file compression/transfers.
-
-
-📝 Suggested Submission Format
-· A .zip file containing:
-o Screenshots (.png or .jpg)
-o Terminal outputs (.txt or screenshots)
-o Compressed archive (books.tar.bz2)
 o Reflection (.txt or .docx)
 
 o Any .c or .html files edited
