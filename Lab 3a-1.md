@@ -19,49 +19,43 @@
 - Run: `sudo certbot --apache` to generate and install the certificate.
 - Check site: HTTPS lock icon should appear in browser.
 
-## Experimentation and Advanced Tasks
-- Who issued the SSL certificate for murdoch.edu.au and csn.murdoch.edu.au?
-- Can you use a subdomain to point to another student’s server?
-- Create two A records with different IPs. Observe failover behaviour.
-- Shutdown server and observe DNS delay in failover. Discuss why.
-- Reflect on DNS load balancing, round-robin, and high-availability use cases.
-
-## Budget and Cost Monitoring
-- Visit EC2 Billing Dashboard to monitor charges.
-- Set a budget and create usage alerts under AWS Budgets.
-- Terminate unused instances to avoid unnecessary charges.
-- Avoid running expensive instance types (e.g. with GPUs) if not required.
-- Disable domain auto-renew if not continuing use post-semester.
-
 ## Activity 1: Domain, DNS
 **1. Domain Name Registered**
-- A registered domain from Namecheap, GoDaddy, Route 53, or similar: Duckdns.org/domain
+- A registered domain from Duckdns.org/domain
 
 **2. A Record Created**
 - DNS A record pointing your domain to your VM's public IP
 
 **3. Apache Installed**
 - Apache2 running and accessible on port 80
+<img width="1244" height="413" alt="image" src="https://github.com/user-attachments/assets/acc4a247-e59d-4d4e-8165-13b072702dde" />
+<img width="720" height="132" alt="image" src="https://github.com/user-attachments/assets/7103218b-9da7-44ce-a583-30a47f0ce27d" />
+<img width="933" height="374" alt="image" src="https://github.com/user-attachments/assets/32fd4be1-2301-49e2-a8f8-bb9c584cf51b" />
 
 **4. Public IP to Domain Mapping Verified**
 - Test using nslookup, dig, and browser to confirm DNS is working
+<img width="825" height="611" alt="image" src="https://github.com/user-attachments/assets/09751efb-79af-4249-a808-e5bbe62e5ae9" />
+<img width="819" height="451" alt="image" src="https://github.com/user-attachments/assets/2577263a-4d12-4471-a1e4-7fd04d33d89b" />
 
 **5. Screenshot: Apache Welcome Page via Domain**
 - Open http://yourdomain.com and capture the Apache welcome page
+<img width="1899" height="1090" alt="image" src="https://github.com/user-attachments/assets/944d9091-a89c-4997-a05d-184c745c81a9" />
 
 **6. Screenshot: DNS Test Output**
 - Output of nslookup yourdomain.com or dig
-
-**7. (Optional) Subdomain Experiment**
-- A record pointing a subdomain (e.g., test.yourdomain.com) to another IP and screenshot of test result
+<img width="825" height="611" alt="image" src="https://github.com/user-attachments/assets/09751efb-79af-4249-a808-e5bbe62e5ae9" />
 
 ## Activity 2: Let’s Encrypt TLS Certificate Setup
 You secure your domain with HTTPS by installing a free Let's Encrypt TLS certificate using Certbot.
 **1. Certbot Installed**
 - Certbot and Apache plugin installed via Snap
+<img width="1850" height="677" alt="image" src="https://github.com/user-attachments/assets/c5669640-d307-42e7-b772-4bc477d6d0bf" />
+<img width="504" height="42" alt="image" src="https://github.com/user-attachments/assets/ba138cd5-0506-4ecd-900b-1994862cda64" />
+installation confirmation
 
 **2. HTTPS Enabled on Domain**
 - https://yourdomain.com should show a secure lock icon
+<img width="919" height="527" alt="image" src="https://github.com/user-attachments/assets/b07496fa-c5c9-4264-ac3c-3b1ea2c9295d" />
 
 **3. Valid TLS Certificate**
 - Certificate issued by Let’s Encrypt (viewable in browser)
@@ -75,16 +69,3 @@ You secure your domain with HTTPS by installing a free Let's Encrypt TLS certifi
 **6. Screenshot: Renewal Dry-Run Output**
 - Output of sudo certbot renew --dry-run showing success
 
-**7 (Optional) Expired Certificate Simulation**
-- Screenshot or explanation of what happens when the cert isn't renewed (if explored)
-
-## Reflection Questions
-- What is the role of DNS in Internet presence?
-- Why does DNS propagation take time?
-- How does Let’s Encrypt validate domain ownership?
-- What are the risks if TLS is not configured on a public-facing site?
-- What could happen if you leave your cloud VM running for months?
-- Output of sudo certbot renew --dry-run showing success
-
-**7. (Optional) Expired Certificate Simulation**
-- Screenshot or explanation of what happens when the cert isn't renewed (if explored)
