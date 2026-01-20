@@ -20,12 +20,6 @@ Activities include filesystem commands, creating scripts, using loops and condit
 <img width="534" height="63" alt="image" src="https://github.com/user-attachments/assets/6e1d9ef4-720b-4d58-bdb2-1d723f63cd8f" />
 <img width="688" height="142" alt="image" src="https://github.com/user-attachments/assets/10609011-de30-4032-a08c-3971cf8b700a" />
 
-- Reflection: File System Commands
-  - Written answers to:
-  - What command did you use to create a directory?
-  - How can you view file content without a GUI editor?
-  - What is the difference between cp and mv? 
-
 ## Part 2: Creating and Executing Basic Bash Scripts 
 Example: `hello_world.sh` 
 - Add `#!/bin/bash` 
@@ -34,12 +28,6 @@ Example: `hello_world.sh`
 - Execute with `./hello_world.sh`
 <img width="930" height="124" alt="image" src="https://github.com/user-attachments/assets/05aed2d4-ee1d-4a5b-91a9-012e10e6fc3a" />
 <img width="570" height="83" alt="image" src="https://github.com/user-attachments/assets/c58234ef-e538-46a4-b4f3-77d684778923" />
-
-- Reflection: Script Basics
-  - Answers to:
-  - What is chmod +x for?
-  - Why is #!/bin/bash used?
-  - How can you personalize script output?
  
 ## Part 3: Implementing Loops and Conditionals 
 Example: `system_info.sh` 
@@ -55,12 +43,6 @@ Example: `system_info.sh`
  
 <img width="607" height="526" alt="image" src="https://github.com/user-attachments/assets/6583fb00-a84e-4912-9bd7-d3c758e2893a" />
 <img width="575" height="210" alt="image" src="https://github.com/user-attachments/assets/ef40b736-dc30-49ba-aa06-d27f2b4bed15" />
-
-- Reflection: Loops and Conditionals 
-  - Written responses:
-  - How does the for loop work?
-  - What happens if number > 10?
-  - How could invalid input be handled more gracefully?
  
 ## Part 4: Automating System Monitoring Tasks 
 Example: `resource_monitor.sh` 
