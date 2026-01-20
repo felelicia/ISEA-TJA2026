@@ -57,17 +57,30 @@ Example: `resource_monitor.sh`
 <img width="927" height="593" alt="image" src="https://github.com/user-attachments/assets/0168cb22-30bc-4d89-9ee1-a9d0e3504ffa" />
 
 ## Reflection Questions 
-- What command did you use to create a new directory?
-mkdir is used to create a new directory.
-- How can you view the contents of a file without opening it in a GUI?
-commands cat, less, more, can be used to view contents of a file without opening it in the GUI where they will display details of the file contents in the terminal itself.
-- What is the purpose of `chmod 777`?
-this command read, write, and execute permissions to the respective users, which allows anyone to modfiy and run the files. This must be moderated to reduce security risks since it might give unauthorised persons permission which they should not have.
-- What does `#!/bin/bash` do at the start of a script?
-this command tells the system to execute the script using Bashshell, which confirms that the script runs correctly no matter the user's default shell, preventing any external hindrance which might cause the script to run incorrectly.
-- What happens when invalid input is entered into a script? 
-the script may produce an incorrect output or an ouput with errors.
-- What output does `free -h` show? 
-this command displays the system memory, including total, used, free, shared, buffer, total RAM and swap memory.
-- How would you monitor network bandwidth in a Bash script? 
-tools such as iftop, nload, and vnstat can be used for Bash scripts with loops or timed intervals. /proc/net/dev can also be used to read network details.
+**What command did you use to create a new directory?**
+
+- mkdir is used to create a new directory.
+ 
+**How can you view the contents of a file without opening it in a GUI?**
+
+- commands cat, less, more, can be used to view contents of a file without opening it in the GUI where they will display details of the file contents in the terminal itself.
+
+**What is the purpose of `chmod 777`?**
+
+- this command read, write, and execute permissions to the respective users, which allows anyone to modfiy and run the files. This must be moderated to reduce security risks since it might give unauthorised persons permission which they should not have.
+
+**What does `#!/bin/bash` do at the start of a script?**
+
+- this command tells the system to execute the script using Bashshell, which confirms that the script runs correctly no matter the user's default shell, preventing any external hindrance which might cause the script to run incorrectly.
+
+**What happens when invalid input is entered into a script?**
+
+- the script may produce an incorrect output or an ouput with errors.
+
+**What output does `free -h` show?**
+
+- this command displays the system memory, including total, used, free, shared, buffer, total RAM and swap memory.
+
+**How would you monitor network bandwidth in a Bash script?**
+
+- tools such as iftop, nload, and vnstat can be used for Bash scripts with loops or timed intervals. /proc/net/dev can also be used to read network details.
