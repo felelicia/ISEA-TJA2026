@@ -33,7 +33,6 @@ to understand basic budgeting and cost management in cloud environments.
 
 
 9. Download and copy files to `/var/www/html/` using `wget` and `sudo cp`.
-<img width="1273" height="471" alt="image" src="https://github.com/user-attachments/assets/cab1157e-f6e5-4809-b690-dc9620bb8491" />
 <img width="1052" height="466" alt="image" src="https://github.com/user-attachments/assets/85dbdcec-b232-4e3f-bd82-243fcb96d9e8" />
 
 ## File Transfer & Permissions 
