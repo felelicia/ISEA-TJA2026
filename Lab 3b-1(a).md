@@ -1,190 +1,60 @@
-What is a crontab file?
+## Bash Backup Scripting, Cron Jobs & Cloud Export
+**Overview of Lab Activity**
+This lab introduces Bash scripting for creating file backups, scheduling them using cron jobs, and exporting them to the cloud. Students will use scripting logic to automate folder archiving, apply timestamps to filenames, and securely upload backups to remote servers.
 
-A crontab file is a schedule file used by cron (the Linux job scheduler) to run commands automatically at specific times or intervals.
+**Learning Objectives**
+- Write Bash scripts to automate tasks (backup, compression, cloud transfer).
+- Use variables, loops, and conditional expressions in Bash.
+- Schedule automated tasks using cron jobs.
+- Move scripts to /usr/bin for system-wide availability.
+- Export backup files to a cloud server using `scp` and secure keys.
+- Explore boot-time execution and user login enhancements (figlet/neofetch).
 
-Think of it as:
+1. Creating Test Files and Directories
+<img width="1009" height="139" alt="image" src="https://github.com/user-attachments/assets/a4784eae-d43e-4d6a-b4a9-7213179a93de" />
 
-A timetable that tells Linux what to run and when to run it
+2. Writing Bash Script
+- Create a script /home/ubuntu/testscript.sh:
+#!/bin/bash
 
----
+now=$(date +"%d_%m_%y_%H%M")
 
-What does “crontab” mean?
+cp -R /home/ubuntu/Documents/* /home/ubuntu/backup/
 
-· cron → time-based job scheduler (from chronos, time)
+zip -r /home/ubuntu/$now.zip /home/ubuntu/backup/*
 
-· tab → table of scheduled jobs
+Optional: move backup to home for easy access
+mv /home/ubuntu/$now.zip /home/ubuntu/
 
-So:
+# Transfer backup to cloud server
+scp -i /home/ubuntu/key.pem /home/ubuntu/$now.zip ubuntu@<cloud_server_ip>:/home/ubuntu/
+3. Granting Execute Permissions
 
-crontab = cron table
+4. Moving the Script to /usr/bin/
+- Now we can execute it system-wide:
 
----
+5. Schedule Cron Job
+- Edit /etc/crontab to run script hourly:
 
-Where is the crontab file?
+- Reload cron:
 
-Each user has their own crontab, stored internally by the system.
+6. Test Key-Based SSH
+- Ensure key.pem has correct permissions:
 
-You usually manage it with:
+- Accept remote host fingerprint:
 
-crontab -e # edit your crontab
+- Confirm scp uploads backup successfully.
 
-crontab -l # list your crontab
 
-System crontabs (advanced):
+## Extension Tasks and Challenges
+**Challenge 1. Boot-Time Execution**
+- Configure script to run at system startup using rc.local or systemd:
 
-· /etc/crontab
+- Alternatively, create a systemd service:
 
-· /etc/cron.d/
+**Challenge 2. MOTD Customisation**
+- Install tools
 
-· /etc/cron.hourly/
+- Edit /etc/motd or ~/.bashrc:
 
-· /etc/cron.daily/
-
----
-
-Crontab file format (VERY IMPORTANT)
-
-Each line = one scheduled job
-
-* * * * * command-to-run
-
-│ │ │ │ │
-
-│ │ │ │ └── Day of week (0–7) (0 or 7 = Sunday)
-
-│ │ │ └──── Month (1–12)
-
-│ │ └────── Day of month (1–31)
-
-│ └──────── Hour (0–23)
-
-└────────── Minute (0–59)
-
----
-
-Example: read this crontab line
-
-0 2 * * * /usr/bin/backup.sh
-
-Meaning:
-
-· 0 → minute 0
-
-· 2 → 2 AM
-
-· * → every day of month
-
-· * → every month
-
-· * → every day of week
-
-📌 Runs backup.sh every day at 2:00 AM
-
----
-
-Common crontab patterns (students should know)
-
-Pattern Meaning
-
-* * * * * Every minute
-
-0 * * * * Every hour
-
-0 0 * * * Every day at midnight
-
-Pattern Meaning
-
-0 9 * * 1 Every Monday at 9 AM
-
-*/5 * * * * Every 5 minutes
-
-0 0 1 * * First day of every month
-
----
-
-Special crontab shortcuts
-
-These mean the same thing but are easier to read:
-
-Shortcut Meaning
-
-@reboot Run once at system startup
-
-@hourly Every hour
-
-@daily Once per day
-
-@weekly Once per week
-
-@monthly Once per month
-
-Example:
-
-@reboot /usr/bin/startup-script.sh
-
----
-
-Crontab environment rules (IMPORTANT EXAM POINT)
-
-Crontab:
-
-· Does NOT load your shell profile
-
-· Has a minimal PATH
-
-· Needs full paths
-
-❌ Bad:
-
-backup.sh
-
-✅ Correct:
-
-/usr/bin/bash /home/ubuntu/backup.sh
-
----
-
-Example: real crontab file
-
-# Backup website every night
-
-0 2 * * * /usr/bin/tar -czf /backup/site.tar.gz /var/www
-
-
-# Clean temp files every Sunday
-
-0 3 * * 0 /usr/bin/rm -rf /tmp/*
-
----
-
-How cron logs jobs
-
-Logs go to:
-
-/var/log/syslog
-
-Search:
-
-grep CRON /var/log/syslog
-
----
-
-Common student mistakes
-
-Mistake Why it fails
-
-Missing full path Cron cannot find command
-
-Script not executable Permission denied
-
-No output handling Errors invisible
-
-Using ~ Not expanded in cron
-
----
-
-Good practice (recommended)
-
-Redirect output:
-
-0 2 * * * /home/ubuntu/backup.sh >> /var/log/backup.log 2>&1
+- Personalized messages display at login.
