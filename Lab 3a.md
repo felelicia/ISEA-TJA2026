@@ -22,6 +22,7 @@
 ## Activity 1: Domain, DNS
 **1. Domain Name Registered**
 - A registered domain from Duckdns.org/domain
+<img width="947" height="678" alt="image" src="https://github.com/user-attachments/assets/bfcb9435-aa17-4f73-b92b-122a7ff241a8" />
 
 **2. A Record Created**
 - DNS A record pointing your domain to your VM's public IP
