@@ -31,40 +31,25 @@ Successful installation of Apache <img width="1914" height="1084" alt="image" sr
 7. Access the server using its public IP in a browser (via HTTP). With given public IP address: http://47.128.64.33/
 <img width="989" height="1137" alt="image" src="https://github.com/user-attachments/assets/c7543e30-692b-438a-839c-c05fa0b66063" />
 
-9. Modify `/var/www/html/index.html` using nano and test the changes live.
-10. Download and copy files to `/var/www/html/` using `wget` and `sudo cp`.
-11. Create hyperlinks in `index.html` using anchor `<a>` tags.
-10.Test access using different devices and browsers.
+8. Modify `/var/www/html/index.html` using nano and test the changes live.
+<img width="1263" height="771" alt="image" src="https://github.com/user-attachments/assets/880087bd-0d84-44ce-92d3-a2498c8c4f32" />
+<img width="1273" height="793" alt="image" src="https://github.com/user-attachments/assets/3a40aa73-676e-47ee-894f-94c4a3e4dd1c" />
+
+9. Download and copy files to `/var/www/html/` using `wget` and `sudo cp`.
+<img width="1273" height="471" alt="image" src="https://github.com/user-attachments/assets/cab1157e-f6e5-4809-b690-dc9620bb8491" />
 
 ## File Transfer & Permissions 
-- Use `wget` to download remote files to your VM. 
-- Use `sudo cp` to move them into the web directory. 
-- Use `scp -i key.pem localfile ubuntu@IP:/home/ubuntu/` to copy files from local to VM. 
-- Use `chmod` or change ownership if facing file access issues. 
+- Use `wget` to download remote files to your VM.
+<img width="1255" height="763" alt="image" src="https://github.com/user-attachments/assets/50928aa2-c73c-4a3b-84ce-fc0dd241756c" />
+
+- Use `sudo cp` to move them into the web directory.
+<img width="1250" height="324" alt="image" src="https://github.com/user-attachments/assets/cafbdd57-e4d5-4390-9a5f-f0a84a68124d" />
 
 ## Budget and Cost Monitoring in AWS 
 - Log into AWS Billing Dashboard via EC2 console. 
 - Set up a budget alert to avoid unexpected charges. 
 - Review instance charges and terminate unused resources. 
 - Avoid launching high-tier or GPU-backed instances.
-
-## Optional Challenges 
-
-**Challenge 1: Network Latency Testing**
-
-- Use `ping` to test servers in different countries. 
-- Compare latencies and discuss expected vs observed results. 
-- Discuss alternatives to EC2: Azure, DigitalOcean, Linode, etc. 
-
-**Challenge 2: Local File Upload via SCP**
-
-- Use `scp -i key.pem file ubuntu@IP:/home/ubuntu/` from your Linux machine. 
-- Move uploaded files into `/var/www/html/` using `sudo mv`. 
-
-**Challenge 3: Create a Custom HTML Page**
-
-- Write a simple HTML file (index.html) using tags like `<h1>`, `<p>`, and `<a>`. 
-- Upload it to the server and test in browser.
 
 ## Reflection Questions 
 - What were the benefits of cloud deployment over local virtualisation? 
