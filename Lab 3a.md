@@ -69,3 +69,8 @@ installation confirmation
 **6. Screenshot: Renewal Dry-Run Output**
 - Output of sudo certbot renew --dry-run showing success
 
+**certbot installed via snap**
+<img width="1891" height="655" alt="image" src="https://github.com/user-attachments/assets/663750d9-dc63-4ce7-9218-810a96906ede" />
+
+**certificate successfully issued**
+<img width="915" height="107" alt="image" src="https://github.com/user-attachments/assets/18e68b2c-2c2e-4c50-bce3-e6324252e575" />
