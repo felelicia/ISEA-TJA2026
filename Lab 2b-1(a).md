@@ -43,8 +43,13 @@ to understand basic budgeting and cost management in cloud environments.
 
 ## Reflection answering:
 **- How does cloud hosting compare to local hosting?**
+
 Cloud hosting is easier to navigate as compared to local hosting. Resources such as CPU, storage, and memory can be adjusted on demand without purchasing physical hardware. Cloud providers like AWS include details with minimises human supervision, whereas local hosting requires more money and maintenance, and is more vulnerable to hardware errors. However, local hosting can be cheaper for very small, fixed workloads and offers full physical control over the server.
+
 **- What would you need to secure this server?**
+
 To secure the EC2 Ubuntu server, we need the configuring of AWS Security Groups to allow only necessary ports (22, 80, and 443), disabling password-based SSH logins in favor of key-based authentication, and regularly applying system updates. Backups and intrusion detection tools are also needed to strengthen network security.
+
 **- What alternatives to EC2 would you consider and why?**
+
 Alternatives to EC2 include managed cloud platforms such as AWS Lightsail, Azure Virtual Machines, and Google Compute Engine, which offer simpler configuration and predictable pricing. For application-focused hosting, AWS Elastic Beanstalk reduce infrastructure management by handling scaling and deployments automatically to reduce human workload. For smaller projects or learning environments,DigitalOcean Droplets is suited for beginner-friendly users to experiment virtual servers. The choice depends on the required level of control, scalability, and the user's purpose.
